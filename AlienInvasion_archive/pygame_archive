@@ -1,0 +1,23 @@
+1.pygame.sprite.groupcollide(Group1, Group2, Dokill1, Dokill2)
+    Group1：第一个精灵组
+    Group2：第二个精灵组
+    Dokill1：设置为True或者False，当设置为True时，当发生碰撞时group1中的相应精灵对象将被删除；当设置为False时，不论是否发生碰撞，group1保持不变。
+    Dokill2：设置为True或者False，当设置为True时，当发生碰撞时group2中的相应精灵对象将被删除，不论是否发生碰撞，group1保持不变。
+2.pygame.surface.blit(source, dest, area=None, special_flags=0)
+    function：显示source图片到surface层上
+    surface：背景层
+    source：源图片路径
+    dest：背景层位置
+3.pygame.font.SysFont(name, size, bold=False, italic=False)->Font:
+    function：从系统字体库加载并返回一个新的字体对象(Font)
+            该字体将会匹配 bold（加粗）和 italic（斜体）参数的要求
+            如果找不到一个合适的系统字体，该函数将会回退并加载默认的 pygame 字体。
+    name：是一个用逗号隔开的列表
+4.pygame.font.Font.render(text, antialias, color, background=None)->Surface:
+    function：创建一个新的Surface对象，并在其上渲染指定文本（本质为图像）
+            仅支持渲染一行文本
+            '\n'不会被渲染，'x00'被渲染产生TypeError
+    text：文本内容
+    antialias：抗锯齿开关
+    color：文字颜色
+    background：背景颜色（默认透明）
